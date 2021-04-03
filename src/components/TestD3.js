@@ -8,6 +8,7 @@ import {MyMarker} from "./MyMarker";
 import {useSelector} from "react-redux";
 
 const cameraBtnStyle = {width: '100%', background:'tomato', border: 'none', color: "white", padding: '0.5rem', cursor: 'pointer'}
+
 const {BaseLayer} = LayersControl;
 
 function TestD3({curLocation}) {
@@ -37,10 +38,38 @@ function TestD3({curLocation}) {
                 zoomControl={false}
             >
                 <ChangeView center={curPosition} zoom={13} />
-                <TileLayer
-                    attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                    url='https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png'
-                />
+                <LayersControl>
+                    <BaseLayer checked name='Alidade Smooth Dark'>
+                        <TileLayer
+                            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                            url='https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=6d2abe55-87b5-43dd-901e-3b781e1d1287'
+                        />
+                    </BaseLayer>
+                    <BaseLayer name='Alidade Smooth'>
+                        <TileLayer
+                            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                            url='https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png?api_key=6d2abe55-87b5-43dd-901e-3b781e1d1287'
+                        />
+                    </BaseLayer>
+                    <BaseLayer name='Outdoors'>
+                        <TileLayer
+                            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                            url='https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png?api_key=6d2abe55-87b5-43dd-901e-3b781e1d1287'
+                        />
+                    </BaseLayer>
+                    <BaseLayer name='OSM Bright'>
+                        <TileLayer
+                            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                            url='https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?api_key=6d2abe55-87b5-43dd-901e-3b781e1d1287'
+                        />
+                    </BaseLayer>
+                    <BaseLayer name='Normal'>
+                        <TileLayer
+                            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                            url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}{r}.png?api_key=6d2abe55-87b5-43dd-901e-3b781e1d1287'
+                        />
+                    </BaseLayer>
+                </LayersControl>
                 <MyMarker position={curPosition}>
                     <Popup autoPan={false}>
                         <img src={img} alt='myPhoto' style={{width: '100%', border: 'solid tomato', background: "lightcoral", borderRadius: 10}} />
