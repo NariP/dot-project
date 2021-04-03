@@ -37,38 +37,10 @@ function TestD3({curLocation}) {
                 zoomControl={false}
             >
                 <ChangeView center={curPosition} zoom={13} />
-                {/*<LayersControl>*/}
-                {/*    <BaseLayer checked name='Alidade Smooth Dark'>*/}
-                        <TileLayer
-                            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                            url='https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png'
-                        />
-                {/*    </BaseLayer>*/}
-                {/*    <BaseLayer name='Alidade Smooth'>*/}
-                {/*        <TileLayer*/}
-                {/*            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'*/}
-                {/*            url='https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png'*/}
-                {/*        />*/}
-                {/*    </BaseLayer>*/}
-                {/*    <BaseLayer name='Outdoors'>*/}
-                {/*        <TileLayer*/}
-                {/*            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'*/}
-                {/*            url='https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png'*/}
-                {/*        />*/}
-                {/*    </BaseLayer>*/}
-                {/*    <BaseLayer name='OSM Bright'>*/}
-                {/*        <TileLayer*/}
-                {/*            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'*/}
-                {/*            url='https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png'*/}
-                {/*        />*/}
-                {/*    </BaseLayer>*/}
-                {/*    <BaseLayer name='Normal'>*/}
-                {/*        <TileLayer*/}
-                {/*            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'*/}
-                {/*            url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}{r}.png'*/}
-                {/*        />*/}
-                {/*    </BaseLayer>*/}
-                {/*</LayersControl>*/}
+                <TileLayer
+                    attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                    url='https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png'
+                />
                 <MyMarker position={curPosition}>
                     <Popup autoPan={false}>
                         <img src={img} alt='myPhoto' style={{width: '100%', border: 'solid tomato', background: "lightcoral", borderRadius: 10}} />
