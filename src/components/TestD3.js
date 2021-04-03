@@ -37,7 +37,7 @@ function TestD3({curLocation}) {
                 <ChangeView center={curPosition} zoom={13} />
                 <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png/{z}/{x}/{y}{r}.png"
+                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
                 <MyMarker position={curPosition}>
                     <Popup autoPan={false}>
