@@ -11,8 +11,7 @@ const curLocationBtnStyle = {height: '40%', border: 'none', background:'tomato',
 export default  function MainPage({history}) {
 
     // Geocode
-    Geocode.setApiKey('AIzaSyAeLZtO0iJWAvdq4Ek-HCNKUKyCe0AdwTg')
-    console.log(process.env.REACT_APP_GOOGLE_API_KEY)
+    Geocode.setApiKey(process.env.REACT_APP_GOOGLE_API_KEY)
     Geocode.setLanguage('en')
     Geocode.setRegion('es')
     Geocode.enableDebug()
