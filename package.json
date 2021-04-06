@@ -62,7 +62,8 @@
       "/public/",
       "/src/setupTest.js",
       "/src/App.test.js",
-      "/src/reportWebVitals.js"
+      "/src/reportWebVitals.js",
+      "/src/images/"
     ]
   }
 }
