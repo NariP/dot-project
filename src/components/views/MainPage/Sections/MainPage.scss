@@ -1,0 +1,45 @@
+.formStyle {
+  background: lightsalmon;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputStyle {
+  width: 70%;
+  height: 60%;
+  border: none;
+}
+
+.searchBtnStyle {
+  height: 60%;
+  border: none;
+  background: tomato;
+  color: white;
+}
+
+.sectionStyle {
+  display: flex;
+  background: lightsalmon;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.curLocationBtnStyle {
+  height: 40%;
+  border: none;
+  background: tomato;
+  color: white;
+}
+
+/* component/Map.js */
+.cameraBtnStyle {
+  width: 100%;
+  background: tomato;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+}
