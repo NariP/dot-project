@@ -1,1 +1,1 @@
-/* app.js에 한 번에 임포트하기 위한 파일 */export { default as MainPage } from './MainPage/MainPage'export { default as CameraPage } from './CameraPage/CameraPage'
+/* app.js에 한 번에 임포트하기 위한 파일 */export { default as MainPage } from './MainPage/MainPage'export { default as CameraPage } from './CameraPage/CameraPage'export { default as GridPage } from './GridPage/GridPage'export { default as AddPostPage } from './AddPostPage/AddPostPage'
