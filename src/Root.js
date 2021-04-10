@@ -1,1 +1,1 @@
-import React from 'react'import { BrowserRouter } from 'react-router-dom'import App from './App'import ResponsiveWrapper from './components/commons/ResponsiveWrapper'const Root = () => {  return (    <BrowserRouter>      <ResponsiveWrapper>        <App />      </ResponsiveWrapper>    </BrowserRouter>  )}export default Root
+import React from 'react'import { BrowserRouter } from 'react-router-dom'import App from './App'const Root = () => {  return (    <BrowserRouter>      <App />    </BrowserRouter>  )}export default Root

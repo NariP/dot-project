@@ -1,1 +1,0 @@
-import React from 'react'import './ResponsiveWrapper.scss'// eslint-disable-next-line react/prop-typesfunction ResponsiveWrapper({ children }) {  return <div className={'wrapper_responsive'}>{children}</div>}export default ResponsiveWrapper

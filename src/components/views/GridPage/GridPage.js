@@ -1,1 +1,0 @@
-import React from 'react'import './Sections/GridPage.scss'import Places from './Sections/Places'function GridPage() {  return (    <article className={'article_wrapper'}>      <Places />    </article>  )}export default GridPage

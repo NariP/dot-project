@@ -1,8 +1,0 @@
-@import 'src/components/commons/colors';
-
-.wrapper_responsive {
-  display: grid;
-  background: darken($first_dark, 15);
-  min-height: 100vh;
-  grid-template-rows: auto 1fr;
-}

@@ -1,1 +1,0 @@
-import React from 'react'import PlaceList from './PlaceList'function Places(props) {  return (    <section aria-label="List of Places">      {examplePlaces.map((place) => (        <PlaceList key={place} place={place} />      ))}    </section>  )}const examplePlaces = ['용산구', '관악구', '중구', '양천구', '강서구']export default Places
